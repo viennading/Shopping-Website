@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: "Work Sans", Verdana, sans-serif;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.logo {
+  position: absolute;
+  left: calc(50% - 85px);
+  padding-top: 20px;
+}
+.header {
+  font-family: "Montserrat", Verdana, sans-serif;
+  overflow: auto;
+  z-index: 1;
+  position: sticky;
+  white-space: nowrap;
+  top: 0;
+  min-height: 62px;
+  background-color: #f7f7f7;
+}
+
+.main_nav ul {
+  float: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main_nav li {
+  float: left;
+  position: relative;
+  width: 80px;
+  list-style: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main_nav > ul > li > a .h1 {
+  text-transform: uppercase;
+}
+
+.main_nav li.women,
+.main_nav li.women li {
+  width: 100px;
+}
+.main_nav a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 20px;
+  line-height: 20px;
+  color: #393e46;
+}
+
+.main_nav ul ul {
+  float: right;
+  position: relative;
+  display: none;
+  opacity: 0;
+}
+
+.main_nav a:hover {
+  color: #000000;
+  font-size: 17px;
+}
+
+.main_nav li:hover .main_nav li:hover li {
+  color: #000000;
+  font-size: 17px;
+}
+
+.main_nav li:hover > ul {
+  display: block;
+  opacity: 1;
+}
+.nav_left {
+  float: left;
+  width: 300px;
+}
+.nav_right {
+  float: right;
+  margin: 20px 10px;
+}
+
+.nav_right a {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav_left .nav_right {
+    float: none;
+  }
+}
+
+.bar {
+  overflow: auto;
+  position: sticky;
+}
+
+.gender {
+  float: left;
+  margin-left: 45px;
+  font-size: 17px;
+}
+
+.search {
+  margin-right: 20px;
+  float: right;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  height: 42px;
+  width: 250px;
+  padding-left: 14px;
+}
+
+button {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+}
+
+.bar input {
+  border: 2px solid #393e46;
+  border-radius: 5px;
+}
+
+.bar button {
+  background: #393e46;
+  border-radius: 0 5px 5px 0;
+  width: 60px;
+}
+
+.bar button:before {
+  content: "Search";
+  font-size: 13px;
+  color: #f7f7f7;
+}
+
+.page1 {
+  background: #f7f7f7;
+}
+
+.page1 .content {
+  height: 100%;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+
+.notebar {
+  background-color: #eeeeee;
+  height: 40px;
+}
+
+.notice {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+.page1 .columnleft {
+  display: inline-block;
+  padding: 10px 1% 0 1%;
+  width: 50%;
+}
+
+.brand_women {
+  background-color: #eeeeee;
+  height: 60px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  margin-top: 65%;
+  padding-top: 20px;
+}
+
+.page1 .columnright {
+  display: inline-block;
+  padding: 10px 1% 0 1%;
+  width: 50%;
+}
+
+.brand_men {
+  background-color: #eeeeee;
+  height: 60px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  margin-top: 65%;
+  padding-top: 20px;
+}
+
+.enter {
+  text-align: center;
+}
+.shopsale {
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+input.radio {
+  height: 20px;
+  width: 20px;
+}
+label {
+  height: 20px;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input.signup {
+  height: 42px;
+  width: 350px;
+  padding-left: 14px;
+}
+
+button {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+}
+
+.enter input {
+  border: 1px solid #393e46;
+  border-radius: 5px;
+}
+
+.enter button {
+  background: #393e46;
+  border-radius: 0 5px 5px 0;
+  width: 100px;
+}
+
+.enter button:before {
+  content: "SIGN MY UP";
+  font-size: 13px;
+  color: #f7f7f7;
+}
+.tip {
+  font-family: "Work Sans", Verdana, sans-serif;
+  color: #393e46;
+  font-size: 14px;
+}
+footer {
+  background-color: #eeeeee;
+  opacity: 0.8;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  overflow: auto;
+  display: inline-block;
+}
+
+.leftpart {
+  width: 33%;
+  float: left;
+}
+.customer {
+    padding-top: 5%;
+  font-family: "Montserrat", Verdana, sans-serif;
+    font-size:18px;
+    font-weight: 900;
+  padding-left: 33%;
+}
+.middlepart {
+  width: 33%;
+  margin-left: 33%;
+}
+
+.about {
+      padding-top: 5%;
+ font-family: "Montserrat", Verdana, sans-serif;
+    font-size:18px;
+    font-weight: 900;
+  padding-left: 33%;
+}
+.rightpart {
+  width: 33%;
+  float: right;
+}
+
+.followus {
+ font-family: "Montserrat", Verdana, sans-serif;
+    font-size:18px;
+    font-weight: 900;
+  padding-top: 5%;
+  padding-right: 25%;
+  margin-bottom: 0;
+}
+.follow img {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+
+p3 {
+  line-height: 2em;
+  text-align: center;
+  padding-left: 33.33%;
+  padding-top: 5%;
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: lightblue;
+  }
+}

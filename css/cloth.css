@@ -1,0 +1,50 @@
+.photonav {
+    text-align: center;
+}
+.clothgallery1 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.clothgallery2 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+    padding:10px 10px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 2%;
+  float: left;
+  width: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 80px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
